@@ -7,7 +7,7 @@
   * @flags: array of flags
   * Return: length of binary
   */
-int print_binary(va_list p, int *flags)
+int print_binary(va_list p, __attribute__((unused)) int *flags)
 {
 	unsigned int n, size;
 	int i;
@@ -37,7 +37,7 @@ int print_binary(va_list p, int *flags)
   * @flags: array of flags
   * Return: length of number
   */
-int print_unsigned(va_list p, int *flags)
+int print_unsigned(va_list p, __attribute__((unused)) int *flags)
 {
 	unsigned int a, i, size;
 	unsigned int arr[100];
