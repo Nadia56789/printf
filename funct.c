@@ -42,7 +42,7 @@ int print_int(va_list args, int *flags)
   * @flags: array of flags
   * Return: 1
   */
-int print_char(va_list args,  _attribute_((unused)) int *flags)
+int print_char(va_list args, int *flags)
 {
 	_putchar(va_arg(args, int));
 	return (1);
@@ -54,7 +54,7 @@ int print_char(va_list args,  _attribute_((unused)) int *flags)
   * @flags: array of flags
   * Return: string length
   */
-int print_string(va_list args,  _attribute_((unused)) int *flags)
+int print_string(va_list args, int *flags)
 {
 	int i;
 	char *s;
@@ -74,7 +74,7 @@ int print_string(va_list args,  _attribute_((unused)) int *flags)
   * @flags: array of flags
   * Return: 1
   */
-int print_per(_attribute_((unused)) va_list args, int *flags)
+int print_per(va_list args, int *flags)
 {
 	int a;
 
